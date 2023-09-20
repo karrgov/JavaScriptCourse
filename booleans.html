@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Booleans</title>
+    </head>
+    <body>
+        <script>
+            /*
+            console.log(3 > 5);
+            console.log(5 == "5.00"); //coversion behaviour
+            console.log(5 === "5.00"); //no conversion behaviour 
+            console.log(5 != "5.00"); //conversion behaviour 
+            console.log(6 !== "6.00"); //no conversion behaviour 
+
+            const age = 17;
+
+            if(age >= 18)
+            {
+                console.log("You can drive");
+            }
+            else 
+            {
+                console.log("You can not drive");
+            }
+            */
+            /*
+
+            if(5)
+            {
+                console.log('Truthy');
+            }
+
+            if(0)
+            {
+                console.log('Falsey');
+            }
+
+            const cartQuantity = 5;
+            if(cartQuantity)
+            {
+                console.log('Cart has products');
+            }
+            console.log(!0); //true
+            console.log('text' / 5); // NaN
+            let unVariable;
+            const variableUndefined = undefined;
+            console.log(unVariable); //undefined
+            */
+           const result = true ? 'truthy' : 'falsy';
+           console.log(result);
+
+           const result = 0 ? 'truthy' : 'falsy';
+           console.log(result);
+
+           const result = 5 > 6 ? 'truthy' : 'falsy';
+           console.log(result);
+
+           false && console.log('Hello'); //when we use && like this, its called the guard operator
+
+           const message = false && 'hello';
+           console.log(message); //false
+
+           const message = 5 && 'hello'; //using the OR operator to set a deffault value 
+           console.log(message); //hello
+
+           const currency = 'EUR' || 'USD';
+           console.log(currency); //EUR
+
+           const currency = undefined || 'USD';
+           console.log(currency); //USD
+
+        </script>
+    </body>
+</html>
